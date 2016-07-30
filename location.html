@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lawyer Name Lawyer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(33.586438, -86.286794),
+    zoom:18,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      
+
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+ 
+
+</head>
+<body>
+	<div class="container">
+
+		<!-- BEGGINING  -->
+		<div class="row navbar">			
+			<div class="logo col-lg-3 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
+				<h1 class="name">Lawyer Name</h1>
+				<h3 class="number">(555) 555-5555</h3>
+				<h4 class="saying">Standing Up For You</h4>
+			</div>	
+
+			<ul class="nav col-lg-5 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-8 hidden-xs">
+				<li class="nav_link"><a href="index.html">About Us</a></li>
+				<li class="nav_link"><a href="information.html">Information</a></li>
+				<li class="nav_link"><a href="location.html">Location</a></li>
+				<li class="nav_link"><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<ul class="visible-xs col-xs-12">
+				<li class="nav_link col-xs-12 text-center"><a href="index.html">About Us</a></li>
+				<li class="nav_link col-xs-12 text-center"><a href="information.html">Information</a></li>
+				<li class="nav_link col-xs-12 text-center"><a href="location.html">Location</a></li>
+				<li class="nav_link col-xs-12 text-center"><a href="contact.html">Contact</a></li>
+			</ul>
+			
+		</div><!-- end of row 1 -->
+	
+<h3 class="directions">In The Same Building As Insert Building Name Here</h3>
+<div id="googleMap" class="map"></div>
+
+
+
+
+
+		<!-- FOOTER -->
+		<div class="row footer">
+			<p>**No representation is made that the quality of legal services to be performed is greater than the legal service performed by other lawyers.
+			</p>
+			<p> **We are a debt relief agency. We help people file for bankruptcy relief under the Bankruptcy code.
+			</p>
+		</div>
+	</div><!-- end of container  -->	
+
+</body>
+</html>
